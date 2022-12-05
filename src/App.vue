@@ -5,7 +5,7 @@
     import AppHeader from "./components/AppHeader.vue"; //importo il componente header
     import AppMain from "./components/AppMain.vue"; //importo il componente main
     import AppFooter from "./components/AppFooter.vue";//importo il componente AppFooter
-    
+
     export default {
         name: "App",
         components: {
@@ -29,4 +29,5 @@
   
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

@@ -6,9 +6,6 @@
 
     export default {
         name: "AppMain",
-        components: {
-          
-        },
         data () {
             return {
                 store,
@@ -19,10 +16,12 @@
 
 <template>
     <div>
-        
+        <h1>Ciao</h1>
     </div>
 </template>
 
 <style lang="scss">
-
+    h1{
+        background-color: var(--background-footer-color);
+    }
 </style>
