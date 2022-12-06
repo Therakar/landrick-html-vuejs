@@ -1,4 +1,25 @@
+// IMPORT PARTIALS
 @import './partials/variables.scss';
+@import './partials/reset.scss';
+@import './partials/typography.scss';
+@import './partials/interactive.scss';
+@import './partials/layout.scss';
 
 
+//UTILITY
+.flex{
+    display: flex;
+}
+.sp-bw{
+    justify-content: space-between;
+}
+.sp-ar{
+    justify-content: space-around;
+}
+.al-cnt{
+    align-items: center;
+}
 
+.just-cnt{
+    justify-content: center;
+}

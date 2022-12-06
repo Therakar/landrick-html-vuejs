@@ -1,24 +1,39 @@
 <script>
-    import axios from "axios"; //importo axios
-    import { store } from "../store"; //importo store.js
-
+    import AppLogoHeader from './AppHeader Components/AppLogoHeader.vue';
+    import AppNavHeader from './AppHeader Components/AppNavHeader.vue';
+    import AppIconsHeader from './AppHeader Components/AppIconsHeader.vue';
     export default {
         name: "AppHeader",
-        data () {
-            return {
-                store,
-            }
+        components: {
+            AppLogoHeader,
+            AppNavHeader,
+            AppIconsHeader
         }
-    };
-    
+    }
 </script>
 
-<template> 
-    <div>
-        
-    </div> 
+<template>
+    <header>
+            <div class="container flex sp-bw al-cnt">
+                <AppLogoHeader />
+                <AppNavHeader />
+                <AppIconsHeader />
+            </div>
+            <div class="container">
+
+            </div>
+    </header>
 </template>
 
-<style lang="scss">
-   
+<style lang="scss" scoped>
+    header{
+        width: 100%;
+        background-color: var(--background-header-color);
+        .container{
+            max-width: 1100px;
+            margin: auto;
+            padding-top: 10px;
+        }
+    }
+    
 </style>
