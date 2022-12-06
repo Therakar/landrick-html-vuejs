@@ -7,7 +7,7 @@
         components: {
             AppLogoHeader,
             AppNavHeader,
-            AppIconsHeader
+            AppIconsHeader,
         }
     }
 </script>
@@ -19,16 +19,13 @@
                 <AppNavHeader />
                 <AppIconsHeader />
             </div>
-            <div class="container">
-
-            </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
     header{
         width: 100%;
-        background-color: var(--background-header-color);
+        background-color: var(--background-first-color);
         .container{
             max-width: 1100px;
             margin: auto;

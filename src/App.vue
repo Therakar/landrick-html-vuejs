@@ -3,13 +3,14 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-
+import AppHero from './components/AppHero.vue'
 //registro i componenti
 export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    AppHero
   }
 }
 </script>
@@ -17,6 +18,7 @@ export default {
 <!-- inserisco i componenti nell'html -->
 <template>
   <AppHeader />
+  <AppHero />
   <AppMain />
   <AppFooter />
 </template>

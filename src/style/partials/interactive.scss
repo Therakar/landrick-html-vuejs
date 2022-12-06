@@ -6,9 +6,12 @@ a{
 
 button{
     background-color: transparent;
-    padding: 10px;
     border: none;
-    font-size: 13px;
-    font-weight: 700;
-    max-height: 50px;
+    margin-bottom: 0;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 0;
 }
