@@ -10,21 +10,25 @@
                         href: "#",
                         label: "HOME",
                         active: false,
+                        icon: ""
                     },
                     {
                         href: "#",
                         label: "LANDING",
                         active: false,
+                        icon: "fa-solid fa-chevron-down",
                     },
                     {
                         href: "#",
-                        label: "PAGES",
-                        active: false,
+                        label: "PAGES",                       
+                        active: false, 
+                        icon: "fa-solid fa-chevron-down",
                     },
                     {
                         href: "#",
                         label: "DOCS",
-                        active: false,
+                        active: false, 
+                        icon: "fa-solid fa-chevron-down",
                     },
                 ],
             };
@@ -35,7 +39,10 @@
 <template>
     <ul class="flex">
         <li v-for="(link, index) in links" class="">
-            <a :href="link.href">{{link.label}}</a>
+            <a :href="link.href">
+                {{link.label}}
+                <span><font-awesome-icon :icon= "link.icon"/></span>
+            </a>
         </li>
     </ul>
 </template>

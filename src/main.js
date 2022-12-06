@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 /* import specific icons */
 import { faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 /* add icons to the library */
-library.add(faGithub, faStackOverflow, faMagnifyingGlass, faUser);
+library.add(faGithub, faStackOverflow, faMagnifyingGlass, faUser, faChevronDown);
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
