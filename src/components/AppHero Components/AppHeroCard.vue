@@ -34,7 +34,7 @@
 <style lang="scss" scoped>
     .hero{
         background-color: var(--background-first-color);
-        border-bottom: 1px solid var(--first-text-color);
+        border-bottom: 1px solid lightgray;
         .hero-top{
             padding-bottom: 100px;
             padding-top: 120px;
