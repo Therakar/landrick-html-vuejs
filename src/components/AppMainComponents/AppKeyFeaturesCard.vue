@@ -53,7 +53,7 @@
 
 <style lang="scss" scoped>
     .key-card{
-        padding: 25px;
+        padding: 20px;
         border: 1px solid var(--background-second-color);
         border-radius: 5px;
         p{

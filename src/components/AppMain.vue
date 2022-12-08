@@ -7,7 +7,7 @@
         components:{
             AppMainCard,
             AppKeyFeaturesCard,
-            AppQuickstartCard 
+            AppQuickstartCard,
 
         }
         
@@ -30,10 +30,8 @@
                 <p>Start Working with <a href="#">Landrick</a> that can provide everything you need to generate awareness, drive traffic, connect.</p>
             </div>
             <AppQuickstartCard/>
+        </section>
 
-        </section>    
-       
-        
         <AppMainCard/>
     </div>
 </template>
@@ -46,7 +44,7 @@
     }
     #key-features{
         margin-top: 115px;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
         .key-text{
             width: 55%;
             margin-bottom: 70px;

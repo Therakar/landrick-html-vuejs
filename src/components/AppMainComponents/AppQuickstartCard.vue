@@ -29,20 +29,21 @@
     .quick-main{
         width: 730px;
         margin: auto;
+        margin-bottom: 100px;
         .quick-icon{
             color: var(--text-quick-color);
         }
         .quick-selection-container{
-            
+            margin-top: 60px;
             margin-bottom: 25px;
-            
+            border-radius: 7px;
             height: 130px;
             padding: 25px;
             background-color: var(--background-first-quick-color);
             .quick-selection{
                 padding: 0;
                 background-color: var(--background-second-quick-color);
-                padding: 1px;
+                border: 1px solid var(--background-second-quick-color);
                 border-radius: 10px;
                 margin-bottom: 20px;
                 li{
