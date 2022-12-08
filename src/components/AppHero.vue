@@ -1,13 +1,13 @@
 <script>
-    import AppHeroCard from './AppHero Components/AppHeroCard.vue';
-    import AppHeroPlatforms from './AppHero Components/AppHeroPlatforms.vue';
+    import AppHeroCard from './AppHeroComponents/AppHeroCard.vue';
+    import AppHeroPlatforms from './AppHeroComponents/AppHeroPlatforms.vue';
 
     export default {
         name: "AppHero",
         components:{
             AppHeroCard,
             AppHeroPlatforms
-        }
+        },
     }
 </script>
 

@@ -1,7 +1,7 @@
 <script>
-    import AppLogoHeader from './AppHeader Components/AppLogoHeader.vue';
-    import AppNavHeader from './AppHeader Components/AppNavHeader.vue';
-    import AppIconsHeader from './AppHeader Components/AppIconsHeader.vue';
+    import AppLogoHeader from './AppHeaderComponents/AppLogoHeader.vue';
+    import AppNavHeader from './AppHeaderComponents/AppNavHeader.vue';
+    import AppIconsHeader from './AppHeaderComponents/AppIconsHeader.vue';
     export default {
         name: "AppHeader",
         components: {
@@ -29,7 +29,7 @@
         .container{
             max-width: 1100px;
             margin: auto;
-            padding-top: 10px;
+            padding: 10px;
         }
     }
     

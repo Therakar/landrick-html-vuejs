@@ -38,7 +38,7 @@
 
 <template>
     <ul class="flex">
-        <li v-for="(link, index) in links" class="">
+        <li v-for="link in links" class="">
             <a :href="link.href">
                 {{link.label}}
                 <span><font-awesome-icon :icon= "link.icon"/></span>
