@@ -14,7 +14,7 @@
                     <li><font-awesome-icon icon= "fa-circle-check fa-regular" class="main-card-icon"/> Our Talented & Experienced Marketing Agency</li>
                     <li><font-awesome-icon icon= "fa-circle-check fa-regular" class="main-card-icon"/> Create your own skin to match your brand</li>
                 </ul>
-                <button>Read More </button>
+                <button>Read More  <font-awesome-icon icon= "fa-arrow-right fa-solid"/></button>
             </div>    
 
             <div class="main-card-image">
@@ -44,11 +44,12 @@
             }
             button{
                 width: 20%;
-                height: 40px;
+                height: 50px;
                 background-color: var(--background-btn-second-color);
                 color: #ffffff;
                 font-weight: 600;
                 border-radius: 5px;
+                
             }
         }
         .main-card-image{

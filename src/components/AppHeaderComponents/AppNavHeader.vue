@@ -10,7 +10,7 @@
                         href: "#",
                         label: "HOME",
                         active: false,
-                        icon: ""
+                        icon: null
                     },
                     {
                         href: "#",

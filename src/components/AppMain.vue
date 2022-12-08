@@ -2,13 +2,14 @@
     import AppMainCard from './AppMainComponents/AppMainCard.vue'
     import AppKeyFeaturesCard from './AppMainComponents/AppKeyFeaturesCard.vue'
     import AppQuickstartCard from './AppMainComponents/AppQuickstartCard.vue'
+    import AppOfferCards from './AppMainComponents/AppOfferCards.vue'
     export default {
         name: "AppMain",
         components:{
             AppMainCard,
             AppKeyFeaturesCard,
             AppQuickstartCard,
-
+            AppOfferCards
         }
         
         }
@@ -31,8 +32,17 @@
             </div>
             <AppQuickstartCard/>
         </section>
-
         <AppMainCard/>
+        <section id="offers">
+            <div class="offers-text">
+                <h2>Our rates for developer from landrick team</h2>
+                <p>Start Working with <a href="#">Landrick</a> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+            </div>
+            <div class="card-container flex sp-bw">
+                <AppOfferCards/>
+            </div>
+            
+        </section>
     </div>
 </template>
 
@@ -66,6 +76,29 @@
         }
         h2{
             margin: 20px 0;
+        }
+    }
+
+    #offers{
+        .offers-text{
+            text-align: center;
+            margin-bottom: 60px;
+            
+            h2{
+                width: 780px;
+                margin: auto;
+                margin-bottom: 40px;
+            }
+
+            p{
+                width: 670px;
+                margin: auto;
+            }
+
+        }
+
+        .card-container{
+            width: 100%;
         }
     }
        

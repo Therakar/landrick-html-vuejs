@@ -25,5 +25,9 @@ import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 library.add( faDollarSign,faCircleCheck);
 
+//icone main card
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+library.add( faArrowRight);
+
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
