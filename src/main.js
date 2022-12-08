@@ -20,7 +20,10 @@ library.add(faGithub, faStackOverflow, faMagnifyingGlass, faUser, faChevronDown)
 import { faLayerGroup, faMobile, faMaximize,faWindowMaximize,faChevronRight } from '@fortawesome/free-solid-svg-icons';
 library.add( faLayerGroup,faMaximize,faWindowMaximize,faMobile,faChevronRight);
 
-
+//icone quickstart
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+library.add( faDollarSign,faCircleCheck);
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 

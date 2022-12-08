@@ -1,11 +1,13 @@
 <script>
     import AppMainCard from './AppMainComponents/AppMainCard.vue'
     import AppKeyFeaturesCard from './AppMainComponents/AppKeyFeaturesCard.vue'
+    import AppQuickstartCard from './AppMainComponents/AppQuickstartCard.vue'
     export default {
         name: "AppMain",
         components:{
             AppMainCard,
-            AppKeyFeaturesCard 
+            AppKeyFeaturesCard,
+            AppQuickstartCard 
 
         }
         
@@ -21,7 +23,15 @@
             </div>
             <AppKeyFeaturesCard />
         </section>
-            
+        <section id="quickstart">
+            <div class="quickstart-text">
+                <span class="badge">Quickstart</span>
+                <h2>Awesome isn't it? Let's dive in!</h2>
+                <p>Start Working with <a href="#">Landrick</a> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+            </div>
+            <AppQuickstartCard/>
+
+        </section>    
        
         
         <AppMainCard/>
@@ -29,6 +39,11 @@
 </template>
 
 <style lang="scss" scoped>
+    a{
+        text-decoration: none;
+        color: var(--second-text-color);
+        font-size: inherit;
+    }
     #key-features{
         margin-top: 115px;
         margin-bottom: 70px;
@@ -38,14 +53,21 @@
             h2{
                 margin-bottom: 40px;
             }
-            p{
-                color: var(--first-text-color);
-                a{
-                    text-decoration: none;
-                    color: var(--second-text-color);
-                    font-size: inherit;
-                }
-            }
+        }
+    }
+
+    #quickstart{
+        .quickstart-text{
+            width: 590px;
+            text-align: center;
+            margin: auto;
+        }
+        .badge{
+            color: var(--second-text-color);
+            font-size: inherit;
+        }
+        h2{
+            margin: 20px 0;
         }
     }
        
