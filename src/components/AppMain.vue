@@ -3,13 +3,15 @@
     import AppKeyFeaturesCard from './AppMainComponents/AppKeyFeaturesCard.vue'
     import AppQuickstartCard from './AppMainComponents/AppQuickstartCard.vue'
     import AppOfferCards from './AppMainComponents/AppOfferCards.vue'
+    import AppNewsleterInput from './AppMainComponents/AppNewsleterInput.vue'
     export default {
         name: "AppMain",
         components:{
             AppMainCard,
             AppKeyFeaturesCard,
             AppQuickstartCard,
-            AppOfferCards
+            AppOfferCards,
+            AppNewsleterInput
         }
         
         }
@@ -41,7 +43,13 @@
             <div class="card-container flex sp-bw">
                 <AppOfferCards/>
             </div>
-            
+        </section>
+        <section id="newsletter">
+            <div class="newsletter-text">
+                <h2>Want to be among the first to find out?</h2>
+                <p>Start Working with <a href="#">Landrick</a> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <AppNewsleterInput />
+            </div>
         </section>
     </div>
 </template>
@@ -80,6 +88,7 @@
     }
 
     #offers{
+        margin-bottom: 115px;
         .offers-text{
             text-align: center;
             margin-bottom: 60px;
@@ -99,6 +108,22 @@
 
         .card-container{
             width: 100%;
+        }
+    }
+
+    #newsletter{
+        margin-bottom: 120px;
+        .newsletter-text{
+            width: 740px;
+            text-align: center;
+            margin: auto;
+
+            h2{
+                margin-bottom: 25px;
+            }
+            p{
+                margin-bottom: 40px;
+            }
         }
     }
        
