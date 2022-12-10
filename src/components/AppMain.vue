@@ -110,7 +110,6 @@
             width: 100%;
         }
     }
-
     #newsletter{
         margin-bottom: 120px;
         .newsletter-text{
@@ -126,5 +125,5 @@
             }
         }
     }
-       
+    
 </style>

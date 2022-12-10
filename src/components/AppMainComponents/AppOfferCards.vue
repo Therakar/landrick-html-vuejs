@@ -15,6 +15,7 @@
                         price: "39.00",
                         billing: "Per Month",
                         description: "Better for growing businesses that want more customers.",
+                        ribbon: ``
                     },
                     {
                         badge:"Enterprise",
@@ -51,7 +52,8 @@
 </script>
 
 <template>
-    <div class="offers-card" v-for="offer in offers">
+    <div class="offers-card" v-for="(offer, index) in offers">
+        <div :class='{ active: index == 1  }' class="ribbon"><span>BEST</span></div>
         <span class="badge ">{{offer.badge}}</span>
         <h1><span><font-awesome-icon icon= "fa-solid fa-dollar-sign" class="price-icon"/></span>{{offer.price}}</h1>
         <p>{{offer.billing}}</p>
@@ -74,6 +76,7 @@
         border: 1px solid var( --background-second-color);
         padding: 25px;
         border-radius: 10px;
+        position: relative;
         .badge{
             color: var(--second-text-color);
             font-size: 16px;
@@ -98,6 +101,53 @@
             padding: 10px 0;
             border-radius: 10px;
             margin-bottom: 10px;
+        }
+        .ribbon {
+            position: absolute;
+            right: -5px; top: -5px;
+            z-index: 1;
+            overflow: hidden;
+            width: 75px; height: 75px;
+            text-align: right;
+            display: none;
+            }
+        .ribbon span {
+            font-size: 10px;
+            font-weight: bold;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 20px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            width: 100px;
+            display: block;
+            background: #79A70A;
+            background: linear-gradient(var(--ribbon-color) 0%, var(--ribbon-color) 100%);
+
+            position: absolute;
+            top: 19px; right: -21px;
+        }
+        .ribbon span::before {
+            content: "";
+            position: absolute; left: 0px; top: 100%;
+            z-index: -1;
+            border-left: 3px solid var(--ribbon-color);
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid var(--ribbon-color);
+        }
+            .ribbon span::after {
+            content: "";
+            position: absolute; right: 0px; top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid var(--ribbon-color);
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid var(--ribbon-color);
+        }
+        .active {
+            display: block;
         }
     }
 </style>
