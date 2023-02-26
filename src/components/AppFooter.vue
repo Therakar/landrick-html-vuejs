@@ -13,11 +13,11 @@ import AppFooterBottom from './AppFooterComponents/AppFooterBottom.vue'
 <template>
     <footer>
         
-        <section id="container footer-top flex ">
+        <section id="container" class="footer-top flex">
             <AppFooterTop />
         </section>
         <hr>
-        <section id="container footer-bottom flex ">
+        <section id="container" class="footer-bottom flex">
             <AppFooterBottom />
         </section>
     </footer>
@@ -26,9 +26,9 @@ import AppFooterBottom from './AppFooterComponents/AppFooterBottom.vue'
 <style lang="scss" scoped>
     footer{
         background-color: var(--background-third-color);
-        height: 500px; //debug
         .footer-top{
             padding: 65px 0;
         }
+
     }
 </style>

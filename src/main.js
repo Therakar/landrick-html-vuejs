@@ -29,5 +29,9 @@ library.add( faDollarSign,faCircleCheck);
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 library.add( faArrowRight);
 
+//icone footer
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+library.add( faEnvelope);
+
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
